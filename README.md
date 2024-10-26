@@ -27,7 +27,7 @@ Using SQL queries on the pizza sales dataset, this analysis examines various asp
 
 ## SQL Code
 
-### KPI Queries
+## KPI Queries
 
 ### Total Revenue
 ```sql
@@ -61,7 +61,7 @@ SELECT
 FROM pizza_sales;
 ```
 
-### CHARTS Queries
+## CHARTS Queries
 
 ### Daily Trend for Total Orders
 ```sql
