@@ -112,4 +112,43 @@ SELECT
 FROM temp_table
 	ORDER BY percentage_of_total DESC;
 ```
+## NOTE
+To apply MONTH, QUARTER, WEEK filters to the queries,
+You can use the WHERE CLAUSE.
+Follow some of the below examples to execute filters.
+```sql
+WITH temp_table AS (
+    SELECT
+        pizza_category, SUM(total_price) AS total_sales,
+        SUM(total_price) AS total_price
+    FROM pizza_sales
+	WHERE MONTH(order_date) = 1
+    GROUP BY pizza_category
+)
+
+SELECT
+    pizza_category, total_sales,
+    total_price * 100.0 / (SELECT SUM(total_price) FROM temp_table) AS percentage_of_total
+FROM temp_table;
+```
+Here MONTH(order_date) = 1 indicates that the output is for the month of January which is the 1st month of the year.
+Similarly MONTH(order_date) = 4 will indicate the month of April.
+
+```sql
+WITH temp_table AS (
+    SELECT
+        pizza_category, SUM(total_price) AS total_sales,
+        SUM(total_price) AS total_price
+    FROM pizza_sales
+	WHERE DATEPART(QUARTER, order_date) = 1
+    GROUP BY pizza_category
+)
+
+SELECT
+    pizza_category, total_sales,
+    total_price * 100.0 / (SELECT SUM(total_price) FROM temp_table) AS percentage_of_total
+FROM temp_table;
+```
+Here DATEPART(QUARTER, order_date) = 1 indicates that the output is for the 1st Quarter of the year.
+Similarly, DATEPART(QUARTER, order_date) = 3 will indicate the 3rd Quarter of the year.
 
