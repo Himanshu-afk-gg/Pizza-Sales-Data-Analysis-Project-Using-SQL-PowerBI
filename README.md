@@ -251,3 +251,11 @@ Similarly, for all the queries where BOTTOM & TOP are required.
 4. **Optimize Menu**: Consider removing or rebranding low-performing pizzas like Brie Carre Pizza to boost sales.
 
 ---
+
+## Stay Connected
+If you'd like to stay connected and follow more of my work, feel free to visit my [LinkedIn profile](https://www.linkedin.com/in/himanshu-jaiswal-a9a30222a/). I’d love to network and discuss data analytics, SQL, or Netflix-related projects.
+
+## Thank You
+Thank you for visiting and taking the time to explore this repository! Your interest is much appreciated.
+
+This README provides a comprehensive summary of the pizza store's data analysis, recommendations, and visualization resources for operational improvements.
