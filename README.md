@@ -18,6 +18,7 @@ All the SQL queries generated in this analysis have been visualized in an intera
 The dataset used for this analysis was cleaned and modified to ensure accurate and actionable insights before being imported into Power BI. You can access the dashboard using the following link:
 
 **[Pizza Sales Power BI Dashboard](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza%20sales%20dashboard.pbix)**
+![Ms Word Logo](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza%20sales%20dashboard_page-0001.jpg)
 
 ### Dataset
 The dataset is available as a CSV file, which was imported into both the Microsoft SQL Server and Power BI for analysis and visualization. Access the dataset here:
