@@ -60,3 +60,56 @@ SELECT
     CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS AVG_Pizza_per_order
 FROM pizza_sales;
 ```
+
+### CHARTS Queries
+
+### Daily Trend for Total Orders
+```sql
+SELECT DATENAME(DW, order_date) AS Date_name, COUNT(DISTINCT order_id) AS Total_Orders
+FROM pizza_sales
+GROUP BY DATENAME(DW, order_date);
+```
+### Monthly Trend for Total Orders
+```sql
+SELECT 
+	DATENAME(MONTH, order_date) AS Month_name,
+	COUNT(DISTINCT order_id) AS Total_orders
+		FROM pizza_sales
+			GROUP BY DATENAME(MONTH, order_date)
+				ORDER BY Total_orders DESC;
+```
+
+### Percentage of Sales by Pizza Category (Example: January)
+```sql
+WITH temp_table AS (
+    SELECT
+        pizza_category, SUM(total_price) AS total_sales,
+        SUM(total_price) AS total_price
+    FROM pizza_sales
+	WHERE MONTH(order_date) = 1
+    GROUP BY pizza_category
+)
+
+SELECT
+    pizza_category, total_sales,
+    total_price * 100.0 / (SELECT SUM(total_price) FROM temp_table) AS percentage_of_total
+FROM temp_table;
+```
+### Percentage of Sales by Pizza Size (Example: January)
+```sql
+WITH temp_table AS (
+    SELECT
+        pizza_size, SUM(total_price) AS total_sales,
+        SUM(total_price) AS total_price
+    FROM pizza_sales
+	WHERE MONTH(order_date) = 1
+    GROUP BY pizza_size
+)
+
+SELECT
+    pizza_size, ROUND(total_sales, 2) AS total_sales,
+    ROUND(total_price * 100.0 / (SELECT SUM(total_price) FROM temp_table), 2) AS percentage_of_total
+FROM temp_table
+	ORDER BY percentage_of_total DESC;
+```
+
