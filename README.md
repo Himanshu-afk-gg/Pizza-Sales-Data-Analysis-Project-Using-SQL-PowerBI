@@ -10,6 +10,18 @@ This project aims to analyze pizza sales data to:
 ## Overview
 Using SQL queries on the pizza sales dataset, this analysis examines various aspects of pizza sales, including overall revenue, customer preferences, and seasonality. Insights derived from this data can help the pizza store optimize its inventory, pricing, and marketing strategies.
 
+## Data Visualization
+All the SQL queries generated in this analysis have been visualized in an interactive Power BI dashboard. The dashboard offers a graphical representation of the findings, showcasing daily, monthly, and category-based sales trends, along with top and bottom-performing pizzas. 
+
+The dataset used for this analysis was cleaned and modified to ensure accurate and actionable insights before being imported into Power BI. You can access the dashboard using the following link:
+
+**[Pizza Sales Power BI Dashboard](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza%20sales%20dashboard.pbix)**
+
+### Dataset
+The dataset is available as a CSV file, which was imported into both the Microsoft SQL Server and Power BI for analysis and visualization. Access the dataset here:
+
+**[Pizza Sales Dataset (CSV)](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza_sales.csv)**
+
 ---
 
 ## SQL Code
