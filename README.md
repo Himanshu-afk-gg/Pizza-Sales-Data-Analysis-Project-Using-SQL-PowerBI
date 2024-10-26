@@ -24,6 +24,14 @@ The dataset is available as a CSV file, which was imported into both the Microso
 
 **[Pizza Sales Dataset (CSV)](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza_sales.csv)**
 
+## Report
+A detailed report has been created summarizing the SQL queries, outputs, and visualizations in Power BI. This report includes:
+- SQL query statements for each analysis step.
+- Screenshots of the Power BI dashboard visualizations corresponding to each query’s output.
+- Detailed insights derived from the visualizations.
+
+**[Download the Full Report (Word Document)](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/SQL%20Queries%20(Pizza%20Shop).docx)**
+
 ---
 
 ## SQL Code
