@@ -10,19 +10,6 @@ This project aims to analyze pizza sales data to:
 ## Overview
 Using SQL queries on the pizza sales dataset, this analysis examines various aspects of pizza sales, including overall revenue, customer preferences, and seasonality. Insights derived from this data can help the pizza store optimize its inventory, pricing, and marketing strategies.
 
-## Findings
-1. **Total Revenue**: The store’s total revenue is calculated to give a high-level view of sales performance.
-2. **Average Order Value**: This KPI shows the average spending per order, which can help understand customer purchasing behavior.
-3. **Top-Selling Pizzas**: Identification of pizzas generating the most revenue and quantity sold.
-4. **Sales Trends**: Patterns observed in daily and monthly sales help identify peak days and months for pizza sales.
-5. **Sales by Category and Size**: Breakdown of sales by pizza category and size provides insight into customer preferences.
-
-## Suggestions
-1. **Focus on High-Performing Pizzas**: Promote best-selling pizzas to maximize revenue.
-2. **Inventory Adjustments**: Increase stock for popular categories and sizes, particularly during peak sales periods.
-3. **Promotions on Slow Days**: Offer discounts on low-sales days to drive more orders.
-4. **Optimize Menu**: Consider removing low-performing pizzas or rebranding them to boost sales.
-
 ---
 
 ## SQL Code
@@ -224,3 +211,31 @@ TOP 5
 ```
 Similarly, for all the queries where BOTTOM & TOP are required.
 
+## Findings
+
+### Time-Based Insights
+- **Daily Patterns**: Orders are highest on weekends, especially on Friday and Saturday evenings.
+- **Monthly Patterns**: Sales peak during the months of July and January.
+
+### Sales by Category and Size
+- **Category**: Classic pizzas contribute to the maximum sales and total orders.
+- **Size**: Large pizzas contribute the most to sales revenue.
+
+### Pizza-Specific Insights
+- **Revenue**:
+  - **Highest Revenue**: Thai Chicken Pizza generates the highest revenue.
+  - **Lowest Revenue**: Brie Carre Pizza generates the lowest revenue.
+- **Quantity Sold**:
+  - **Most Sold**: Classic Deluxe Pizza has the highest quantity sold.
+  - **Least Sold**: Brie Carre Pizza has the lowest quantity sold.
+- **Order Volume**:
+  - **Most Ordered**: Classic Deluxe Pizza has the highest number of orders.
+  - **Least Ordered**: Brie Carre Pizza has the fewest orders.
+
+## Suggestions
+1. **Focus on High-Performing Pizzas**: Promote best-selling pizzas to maximize revenue.
+2. **Inventory Adjustments**: Increase stock for popular categories and sizes, particularly during peak sales periods.
+3. **Promotions on Slow Days**: Offer discounts on low-sales days to drive more orders.
+4. **Optimize Menu**: Consider removing or rebranding low-performing pizzas like Brie Carre Pizza to boost sales.
+
+---
