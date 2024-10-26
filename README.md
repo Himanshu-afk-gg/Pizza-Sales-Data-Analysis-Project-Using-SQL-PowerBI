@@ -29,28 +29,34 @@ Using SQL queries on the pizza sales dataset, this analysis examines various asp
 
 ### KPI Queries
 
+### Total Revenue
 ```sql
--- Total Revenue
 SELECT 
     ROUND(SUM(total_price), 0) AS Total_Revenue
 FROM pizza_sales;
+```
 
--- Average Order Value
+### Average Order Value
+```sql
 SELECT 
     SUM(total_price) / COUNT(DISTINCT order_id) AS AVG_order_value
 FROM pizza_sales;
-
--- Total Quantity of Pizza Sold
+```
+### Total Quantity of Pizza Sold
+```sql
 SELECT 
     SUM(quantity) AS Total_Quantity_of_Pizzas_Sold 
 FROM pizza_sales;
-
--- Total Orders
+```
+### Total Orders
+```sql
 SELECT 
     COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales;
-
--- Average Pizza per Order
+```
+### Average Pizza per Order
+```sql
 SELECT 
     CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS AVG_Pizza_per_order
 FROM pizza_sales;
+```
