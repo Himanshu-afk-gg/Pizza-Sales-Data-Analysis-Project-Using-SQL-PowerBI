@@ -1,5 +1,5 @@
 # Pizza Sales Data Analysis
-![Netflix Logo](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/ms%20sql%20image.png)
+![MS Sql Logo](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/ms%20sql%20image.png)
 
 ## Objectives
 This project aims to analyze pizza sales data to:
