@@ -152,3 +152,75 @@ FROM temp_table;
 Here DATEPART(QUARTER, order_date) = 1 indicates that the output is for the 1st Quarter of the year.
 Similarly, DATEPART(QUARTER, order_date) = 3 will indicate the 3rd Quarter of the year.
 
+## BEST & WORST SELLERS
+
+### Top 5 Pizzas by Total Revenue
+```sql
+SELECT TOP 5
+    pizza_name,
+    ROUND(SUM(total_price), 2) AS total_revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_revenue DESC;
+```
+
+### Bottom 5 Pizzas by Total Revenue
+```sql
+SELECT TOP 5
+    pizza_name,
+    ROUND(SUM(total_price), 2) AS total_revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_revenue ASC;
+```
+
+### Top 5 Pizzas by Quantity Sold
+```sql
+SELECT TOP 5
+    pizza_name,
+    ROUND(SUM(quantity), 2) AS total_quantity
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_quantity DESC;
+```
+
+### Bottom 5 Pizzas by Quantity Sold
+```sql
+SELECT TOP 5
+    pizza_name,
+    ROUND(SUM(quantity), 2) AS total_quantity
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_quantity ASC;
+```
+
+### Top 5 Pizzas by Total Orders
+```sql
+SELECT TOP 5
+    pizza_name,
+    COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_orders DESC;
+```
+
+### Bottom 5 Pizzas by Total Orders
+```sql
+SELECT TOP 5
+    pizza_name,
+    COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_orders ASC;
+```
+## NOTE 
+At the above-mentioned query 
+```sql
+LIMIT 5;
+```
+can also be used at the last by erasing the
+```sql
+TOP 5
+```
+Similarly, for all the queries where BOTTOM & TOP are required.
+
