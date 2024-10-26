@@ -16,8 +16,8 @@ Using SQL queries on the pizza sales dataset, this analysis examines various asp
 All the SQL queries generated in this analysis have been visualized in an interactive Power BI dashboard. The dashboard offers a graphical representation of the findings, showcasing daily, monthly, and category-based sales trends, along with top and bottom-performing pizzas. 
 
 The dataset used for this analysis was cleaned and modified to ensure accurate and actionable insights before being imported into Power BI. You can access the dashboard using the following link:
-
 **[Pizza Sales Power BI Dashboard](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza%20sales%20dashboard.pbix)**
+
 ![Ms Word Logo](https://github.com/Himanshu-afk-gg/Pizza-Sales-Data-Analysis-Project-Using-SQL-PowerBI/blob/main/pizza%20sales%20dashboard_page-0001.jpg)
 
 ### Dataset
